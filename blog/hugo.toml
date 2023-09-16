@@ -1,0 +1,6 @@
+baseURL = 'https://うさぎ.art/'
+languageCode = 'en-us'
+title = 'うさぎ'
+author = "bunny"
+theme = "usagiart"
+paginate = 10

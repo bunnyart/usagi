@@ -1,0 +1,51 @@
+:root {
+  --primary-color: #39ff14;
+  --background-color: #24202b;
+}
+
+body {
+  margin: 40px auto;
+  max-width: 650px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #eee;
+  padding: 0 10px;
+  background-color: var(--background-color);
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+footer {
+  text-align: center;
+}
+
+b, strong, a {
+  color: var(--primary-color) !important;
+}
+
+hr {
+  border: 0;
+  border-top: 1px dotted var(--primary-color);
+}
+
+header a {
+  text-decoration: 0;
+}
+
+section article {
+  border-top: 1px dotted var(--primary-color);
+}
+
+nav {
+  float: right;
+}
+
+code {
+  background-color: #111;
+  color: var(--primary-color);
+  font-size: 12pt;
+  padding: 3px 5px;
+  border-radius: 5px;
+}

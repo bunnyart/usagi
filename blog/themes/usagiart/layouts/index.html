@@ -1,0 +1,19 @@
+{{ define "main" }}
+  {{ .Content }}
+
+    {{ $mainSections := .Site.Params.mainSections }}
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" $mainSections) }}
+    {{ if gt $paginator.TotalNumberOfElements 0 }}
+      <section>
+        {{ range $paginator.Pages }}
+          <article>
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <p>
+            <a style="float: right;" href="{{ .Permalink }}">&gt;read more</a>
+            </p>
+            <p>{{ .Summary }}</p>
+          </article>
+        {{ end }}
+      </section>
+    {{ end }}
+{{ end }}
